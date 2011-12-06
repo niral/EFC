@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\Temp\WebApp" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="11/25/2011 23:37:24" />
+    <file relUrl="Site.Master" publishTime="11/25/2011 23:21:52" />
+    <file relUrl="Account/Web.config" publishTime="11/25/2011 22:14:56" />
+    <file relUrl="bin/WebApplication2.xml" publishTime="12/06/2011 20:54:47" />
+    <file relUrl="Chat.aspx" publishTime="11/25/2011 23:16:24" />
+    <file relUrl="Files.aspx" publishTime="11/25/2011 23:05:18" />
+    <file relUrl="Default.aspx" publishTime="11/25/2011 22:52:20" />
+    <file relUrl="Account/ChangePasswordSuccess.aspx" publishTime="11/25/2011 22:14:56" />
+    <file relUrl="Account/Login.aspx" publishTime="11/25/2011 23:22:52" />
+    <file relUrl="Styles/Site.css" publishTime="11/25/2011 23:16:24" />
+    <file relUrl="Scripts/jquery-1.4.1.js" publishTime="11/25/2011 22:14:56" />
+    <file relUrl="Account/ChangePassword.aspx" publishTime="11/25/2011 22:14:56" />
+    <file relUrl="About.aspx" publishTime="11/25/2011 22:14:56" />
+    <file relUrl="Global.asax" publishTime="11/25/2011 22:14:56" />
+    <file relUrl="Forum.aspx" publishTime="11/25/2011 22:59:10" />
+    <file relUrl="bin/WebApplication2.pdb" publishTime="12/06/2011 20:54:47" />
+    <file relUrl="bin/WebApplication2.dll" publishTime="12/06/2011 20:54:47" />
+    <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="11/25/2011 22:14:56" />
+    <file relUrl="Account/Register.aspx" publishTime="11/25/2011 22:14:56" />
+    <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="11/25/2011 22:14:56" />
+  </publishProfile>
+</publishData>
