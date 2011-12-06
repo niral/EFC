@@ -1,0 +1,20 @@
+C:\Users\user\Documents\Visual Studio 2010\Projects\WebApplication2\WebApplication2\bin\WebApplication2.dll
+C:\Users\user\Documents\Visual Studio 2010\Projects\WebApplication2\WebApplication2\bin\WebApplication2.pdb
+C:\Users\user\Documents\Visual Studio 2010\Projects\WebApplication2\WebApplication2\bin\WebApplication2.xml
+C:\Users\user\Documents\Visual Studio 2010\Projects\WebApplication2\WebApplication2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\user\Documents\Visual Studio 2010\Projects\WebApplication2\WebApplication2\obj\Debug\WebApplication2.Resources.resources
+C:\Users\user\Documents\Visual Studio 2010\Projects\WebApplication2\WebApplication2\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\user\Documents\Visual Studio 2010\Projects\WebApplication2\WebApplication2\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\user\Documents\Visual Studio 2010\Projects\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
+C:\Users\user\Documents\Visual Studio 2010\Projects\WebApplication2\WebApplication2\obj\Debug\WebApplication2.xml
+C:\Users\user\Documents\Visual Studio 2010\Projects\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
+D:\Idan\Idan-School\Courses\שנה ג\EFC Project Source Files\WebApplication2\WebApplication2\bin\WebApplication2.dll
+D:\Idan\Idan-School\Courses\שנה ג\EFC Project Source Files\WebApplication2\WebApplication2\bin\WebApplication2.pdb
+D:\Idan\Idan-School\Courses\שנה ג\EFC Project Source Files\WebApplication2\WebApplication2\bin\WebApplication2.xml
+D:\Idan\Idan-School\Courses\שנה ג\EFC Project Source Files\WebApplication2\WebApplication2\obj\Debug\ResolveAssemblyReference.cache
+D:\Idan\Idan-School\Courses\שנה ג\EFC Project Source Files\WebApplication2\WebApplication2\obj\Debug\WebApplication2.Resources.resources
+D:\Idan\Idan-School\Courses\שנה ג\EFC Project Source Files\WebApplication2\WebApplication2\obj\Debug\GenerateResource.read.1.tlog
+D:\Idan\Idan-School\Courses\שנה ג\EFC Project Source Files\WebApplication2\WebApplication2\obj\Debug\GenerateResource.write.1.tlog
+D:\Idan\Idan-School\Courses\שנה ג\EFC Project Source Files\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
+D:\Idan\Idan-School\Courses\שנה ג\EFC Project Source Files\WebApplication2\WebApplication2\obj\Debug\WebApplication2.xml
+D:\Idan\Idan-School\Courses\שנה ג\EFC Project Source Files\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
