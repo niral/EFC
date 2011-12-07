@@ -18,3 +18,13 @@ D:\Idan\Idan-School\Courses\שנה ג\EFC Project Source Files\WebApplication2\W
 D:\Idan\Idan-School\Courses\שנה ג\EFC Project Source Files\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
 D:\Idan\Idan-School\Courses\שנה ג\EFC Project Source Files\WebApplication2\WebApplication2\obj\Debug\WebApplication2.xml
 D:\Idan\Idan-School\Courses\שנה ג\EFC Project Source Files\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
+C:\Users\ניר\Desktop\לימודים - שנה ג\פרוייקט - הנדסת תוכנה\EFC Documents\WebApplication2\WebApplication2\bin\WebApplication2.dll
+C:\Users\ניר\Desktop\לימודים - שנה ג\פרוייקט - הנדסת תוכנה\EFC Documents\WebApplication2\WebApplication2\bin\WebApplication2.pdb
+C:\Users\ניר\Desktop\לימודים - שנה ג\פרוייקט - הנדסת תוכנה\EFC Documents\WebApplication2\WebApplication2\bin\WebApplication2.xml
+C:\Users\ניר\Desktop\לימודים - שנה ג\פרוייקט - הנדסת תוכנה\EFC Documents\WebApplication2\WebApplication2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\ניר\Desktop\לימודים - שנה ג\פרוייקט - הנדסת תוכנה\EFC Documents\WebApplication2\WebApplication2\obj\Debug\WebApplication2.Resources.resources
+C:\Users\ניר\Desktop\לימודים - שנה ג\פרוייקט - הנדסת תוכנה\EFC Documents\WebApplication2\WebApplication2\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\ניר\Desktop\לימודים - שנה ג\פרוייקט - הנדסת תוכנה\EFC Documents\WebApplication2\WebApplication2\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\ניר\Desktop\לימודים - שנה ג\פרוייקט - הנדסת תוכנה\EFC Documents\WebApplication2\WebApplication2\obj\Debug\WebApplication2.dll
+C:\Users\ניר\Desktop\לימודים - שנה ג\פרוייקט - הנדסת תוכנה\EFC Documents\WebApplication2\WebApplication2\obj\Debug\WebApplication2.xml
+C:\Users\ניר\Desktop\לימודים - שנה ג\פרוייקט - הנדסת תוכנה\EFC Documents\WebApplication2\WebApplication2\obj\Debug\WebApplication2.pdb
