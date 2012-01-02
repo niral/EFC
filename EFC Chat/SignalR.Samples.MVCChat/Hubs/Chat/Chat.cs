@@ -10,7 +10,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using SignalR.Hubs;
 using SignalR.Samples.MVCChat.Hubs.Chat.ContentProviders;
-
+using SignalR.Samples.MVCChat.Controllers;
 
 namespace SignalR.Samples.MVCChat.Hubs.Chat
 {
@@ -24,6 +24,7 @@ namespace SignalR.Samples.MVCChat.Hubs.Chat
             new YouTubeContentProvider(),
             new CollegeHumorContentProvider()
         };
+       
 
         public bool Join()
         {
@@ -651,6 +652,12 @@ namespace SignalR.Samples.MVCChat.Hubs.Chat
             return user;
         }
 
+
+        private void p()
+        {
+           
+
+        }
         private void EnsureUserAndRoom()
         {
             EnsureUser();

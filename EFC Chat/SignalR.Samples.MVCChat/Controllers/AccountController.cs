@@ -53,20 +53,20 @@ namespace SignalR.Samples.MVCChat.Controllers
             if (ModelState.IsValid)
             {
                 if (user_exist(model.UserName.ToString(), model.Password.ToString()) == (-1))
-                {
-                   
+                {                   
                
-                  /*  using SignalR.Samples.MVCChat.Hubs.Chat.Chat("/nick" + model.UserName);*/
+                    //using SignalR.Samples.MVCChat.Hubs.Chat.Chat("/nick" + model.UserName);
                     FormsAuthentication.SetAuthCookie(model.UserName, model.RememberMe);
                     if (Url.IsLocalUrl(returnUrl) && returnUrl.Length > 1 && returnUrl.StartsWith("/")
                         && !returnUrl.StartsWith("//") && !returnUrl.StartsWith("/\\"))
                     {
-                        LoggedUser = 1;
+                        LoggedUser = 1;                        
                         return Redirect(returnUrl);
                     }
                     else
                     {
                         LoggedUser = 1;
+                        
                         return RedirectToAction("Index", "Chat");
                     }
                 }

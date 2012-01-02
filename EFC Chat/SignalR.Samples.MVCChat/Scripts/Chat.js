@@ -1,14 +1,17 @@
 ﻿/// <reference path="../../Scripts/jquery-1.6.2.js" />
 /// <reference path="../../Scripts/jQuery.tmpl.js" />
 /// <reference path="../../Scripts/jquery.cookie.js" />
+var m = 1;
+
 
 $(function () {
+
     var chat = $.connection.chat;
+
 
     function clearMessages() {
         $('#messages').html('');
     }
-
     function clearUsers() {
         $('#users').html('');
     }
@@ -128,12 +131,23 @@ $(function () {
 
     $('#send-message').submit(function () {
         var command = $('#new-message').val();
-       // command = '/nick idan';
+        //    command = '/nick idan';
         chat.send(command)
             .fail(function (e) {
                 addMessage(e, 'error');
             });
+        if (m == 1) {
 
+        }
+        alert(m);
+        m++;
+
+        //   m = m + 1;
+        /*
+        if ($b == false) {
+        chat.send("/join Idan");
+        $b = true;
+        }*/
         $('#new-message').val('');
         $('#new-message').focus();
 

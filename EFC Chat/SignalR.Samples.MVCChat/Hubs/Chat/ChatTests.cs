@@ -18,7 +18,7 @@ public partial class _Default : SignalR.Samples.MVCChat.Hubs.Chat.Chat
        /* bool res = TryHandleCommand("/nick idan");
         TryHandleCommand("/nick idan1");
         TryHandleCommand("/nick idan2");*/
-        Send("/nick idan");
+      //  Send("/nick idan");
         
     }
 
