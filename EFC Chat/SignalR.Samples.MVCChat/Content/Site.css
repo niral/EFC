@@ -1,33 +1,28 @@
-﻿/*----------------------------------------------------------
-The base color for this template is #5c87b2. If you'd like
-to use a different color start by replacing all instances of
-#5c87b2 with your new color.
-----------------------------------------------------------*/
-body {
-    background-color:Teal;
+﻿body {
+    background-color: #5c87b2;
     font-size: .85em;
-    font-family: "Modern No. 20", Verdana, Helvetica, Sans-Serif;
+    font-family: "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
     margin: 0;
     padding: 0;
-    color: #454500;
+    color: #696969;
 }
 
 a:link {
-    color: #454500;
+    color: #034af3;
     text-decoration: underline;
 }
 
 a:visited {
-    color: #454500;
+    color: #505abc;
 }
 
 a:hover {
-    color: #454500;
+    color: #1d60ff;
     text-decoration: none;
 }
 
 a:active {
-    color: #FF4500;
+    color: #12eb87;
 }
 
 p, ul {
@@ -93,7 +88,7 @@ header h1, #header h1 {
     font-weight: bold;
     padding: 5px 0;
     margin: 0;
-    color: #FF4500;
+    color: #fff;
     border: none;
     line-height: 2em;
     font-size: 32px !important;
@@ -102,7 +97,7 @@ header h1, #header h1 {
 
 #main {
     padding: 30px 30px 15px 30px;
-    background-color: #FF4500;
+    background-color: #fff;
     border-radius: 4px 0 0 0;
     -webkit-border-radius: 4px 0 0 0;
     -moz-border-radius: 4px 0 0 0;
@@ -110,8 +105,8 @@ header h1, #header h1 {
 
 footer, 
 #footer {
-    background-color: #FF4500;
-    color: #FF4500;
+    background-color: #fff;
+    color: #999;
     padding: 10px 0;
     text-align: center;
     line-height: normal;
@@ -125,7 +120,7 @@ footer,
 /* TAB MENU   
 ----------------------------------------------------------*/
 ul#menu {
-    border-bottom: 5px #5C87B2 solid;
+    border-bottom: 1px #5C87B2 solid;
     padding: 0 0 2px;
     position: relative;
     margin: 0;
@@ -133,7 +128,7 @@ ul#menu {
 }
 
 ul#menu li {
-    display: inline;/* inline;*/
+    display: inline;
     list-style: none;
 }
 

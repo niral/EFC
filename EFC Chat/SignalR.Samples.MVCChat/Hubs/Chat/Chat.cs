@@ -1,4 +1,12 @@
-﻿using System;
+﻿/* 
+ * Chat.cs- main class of the main uses of the chat functionality and usability. 
+ * Conatains the main methods to function a simple chat program.
+ * Written by: ALL EFC Team, as each has a part of specific methods.
+ *
+ * */
+
+
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
@@ -25,7 +33,7 @@ namespace SignalR.Samples.MVCChat.Hubs.Chat
             new CollegeHumorContentProvider()
         };
        
-
+        // This method joins a user to a chat room.
         public bool Join()
         {
             // Check the user id cookie
@@ -69,6 +77,8 @@ namespace SignalR.Samples.MVCChat.Hubs.Chat
             return false;
         }
 
+
+        //This method sends the string 'content' using the TryHandleCommand.
         public void Send(string content)
         {
             //content = Sanitizer.GetSafeHtmlFragment(content);
@@ -121,60 +131,7 @@ namespace SignalR.Samples.MVCChat.Hubs.Chat
             }
         }
 
-
-
-        public void Send2(string content )
-        {
-            content = "/nick/idan";
-            //content = Sanitizer.GetSafeHtmlFragment(content);
-
-            if (!TryHandleCommand(content))
-            {
-                string roomName = Caller.room;
-                string name = Caller.name;
-
-                EnsureUserAndRoom();
-
-                HashSet<string> links;
-                var messageText = Transform(content, out links);
-                var chatMessage = new ChatMessage(name, messageText);
-
-                _rooms[roomName].Messages.Add(chatMessage);
-
-                Clients[roomName].addMessage(chatMessage.Id, chatMessage.User, chatMessage.Text);
-
-                if (links.Any())
-                {
-                    // REVIEW: is this safe to do? We're holding on to this instance 
-                    // when this should really be a fire and forget.
-                    var contentTasks = links.Select(ExtractContent).ToArray();
-                    Task.Factory.ContinueWhenAll(contentTasks, tasks =>
-                    {
-                        foreach (var task in tasks)
-                        {
-                            if (task.IsFaulted)
-                            {
-                                Trace.TraceError(task.Exception.GetBaseException().Message);
-                                continue;
-                            }
-
-                            if (String.IsNullOrEmpty(task.Result))
-                            {
-                                continue;
-                            }
-
-                            // Try to get content from each url we're resolved in the query
-                            string extractedContent = "<p>" + task.Result + "</p>";
-
-                            // If we did get something, update the message and notify all clients
-                            chatMessage.Text += extractedContent;
-
-                            Clients[roomName].addMessageContent(chatMessage.Id, extractedContent);
-                        }
-                    });
-                }
-            }
-        }
+               
         public void Disconnect()
         {
             ChatUser user = _users.Values.FirstOrDefault(u => u.ClientId == Context.ClientId);
@@ -428,7 +385,7 @@ namespace SignalR.Samples.MVCChat.Hubs.Chat
         */
 
 
-
+        //This method checks the chat input if it is correct.
         public bool TryHandleCommand(string message)
         {            
             string room = Caller.room;
@@ -440,7 +397,7 @@ namespace SignalR.Samples.MVCChat.Hubs.Chat
                 string[] parts = message.Substring(1).Split(' ');
                 string commandName = parts[0];
 
-                if (commandName.Equals("nick", StringComparison.OrdinalIgnoreCase))
+                if (commandName.Equals("nick", StringComparison.OrdinalIgnoreCase)) // Contains "nick"
                 {
                     string newUserName = String.Join(" ", parts.Skip(1));
 
@@ -449,7 +406,7 @@ namespace SignalR.Samples.MVCChat.Hubs.Chat
                         throw new InvalidOperationException("No username specified!");
                     }
 
-                    if (newUserName.Equals(name, StringComparison.OrdinalIgnoreCase))
+                    if (newUserName.Equals(name, StringComparison.OrdinalIgnoreCase)) // User exists
                     {
                         throw new InvalidOperationException("That's already your username...");
                     }
@@ -515,7 +472,7 @@ namespace SignalR.Samples.MVCChat.Hubs.Chat
 
                         return true;
                     }
-                    else if (commandName.Equals("join", StringComparison.OrdinalIgnoreCase))
+                    else if (commandName.Equals("join", StringComparison.OrdinalIgnoreCase)) // Joining a room.
                     {
                         if (parts.Length == 1)
                         {
@@ -560,7 +517,7 @@ namespace SignalR.Samples.MVCChat.Hubs.Chat
 
                         return true;
                     }
-                    else if (commandName.Equals("msg", StringComparison.OrdinalIgnoreCase))
+                    else if (commandName.Equals("msg", StringComparison.OrdinalIgnoreCase)) //Sending private message
                     {
                         if (_users.Count == 1)
                         {
@@ -653,11 +610,7 @@ namespace SignalR.Samples.MVCChat.Hubs.Chat
         }
 
 
-        private void p()
-        {
-           
-
-        }
+      
         private void EnsureUserAndRoom()
         {
             EnsureUser();
@@ -727,7 +680,7 @@ namespace SignalR.Samples.MVCChat.Hubs.Chat
         }
 
         [Serializable]
-        public class ChatMessage
+        public class ChatMessage // Chat message class
         {
             public string Id { get; private set; }
             public string User { get; set; }
@@ -741,7 +694,7 @@ namespace SignalR.Samples.MVCChat.Hubs.Chat
         }
 
         [Serializable]
-        public class ChatUser
+        public class ChatUser //chat user class
         {
             public string ClientId { get; set; }
             public string Id { get; set; }
@@ -760,7 +713,7 @@ namespace SignalR.Samples.MVCChat.Hubs.Chat
             }
         }
 
-        public class ChatRoom
+        public class ChatRoom // Chat room class
         {
             public List<ChatMessage> Messages { get; set; }
             public HashSet<string> Users { get; set; }

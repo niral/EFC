@@ -1,8 +1,6 @@
 ﻿/// <reference path="../../Scripts/jquery-1.6.2.js" />
 /// <reference path="../../Scripts/jQuery.tmpl.js" />
 /// <reference path="../../Scripts/jquery.cookie.js" />
-var m = 1;
-
 
 $(function () {
 
@@ -136,18 +134,7 @@ $(function () {
             .fail(function (e) {
                 addMessage(e, 'error');
             });
-        if (m == 1) {
 
-        }
-        alert(m);
-        m++;
-
-        //   m = m + 1;
-        /*
-        if ($b == false) {
-        chat.send("/join Idan");
-        $b = true;
-        }*/
         $('#new-message').val('');
         $('#new-message').focus();
 

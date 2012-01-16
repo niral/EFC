@@ -1,4 +1,10 @@
-﻿using System;
+﻿/* 
+ * AccountController.cs- main class of the main uses of the users functionality and usability. 
+ * Conatains the main methods to work with users signing in.
+ * Written by: ALL EFC Team, as each has a part of specific methods.
+ * Some methods are built by default when creating a MVC3 project.
+ * */
+using System;
 using System.Web.Mvc;
 using System.Web.Security;
 using SignalR.Samples.MVCChat.Models;
@@ -13,7 +19,8 @@ namespace SignalR.Samples.MVCChat.Controllers
     public class AccountController : Controller
     {
         public int LoggedUser = 0;
-        private String file_path = @"d:\users.txt";
+        private String file_path = @"d:\users.txt";  //The path of which the users file will be saved.
+                                                    //file format:  username \t\t password.
         //
         // GET: /Account/LogOn
 
@@ -22,6 +29,7 @@ namespace SignalR.Samples.MVCChat.Controllers
             return View();
         }
 
+        //This method varifies if a user exists in a the users file. if exists return -1, else retunr 0.
         private int user_exist(string user, string pass)
         {
             string[] lines = System.IO.File.ReadAllLines(file_path);
@@ -34,7 +42,7 @@ namespace SignalR.Samples.MVCChat.Controllers
             while (S != null)
             {
 
-                if (S == (user + "\t\t" + pass))
+                if (S == (user + "\t\t" + pass)) // User exists, return -1.
                 {
                     SR.Close();
                     return -1;
@@ -48,11 +56,11 @@ namespace SignalR.Samples.MVCChat.Controllers
         // POST: /Account/LogOn
 
         [HttpPost]
-        public ActionResult LogOn(LogOnModel model, string returnUrl)
+        public ActionResult LogOn(LogOnModel model, string returnUrl) //
         {
             if (ModelState.IsValid)
             {
-                if (user_exist(model.UserName.ToString(), model.Password.ToString()) == (-1))
+                if (user_exist(model.UserName.ToString(), model.Password.ToString()) == (-1)) // If user doesn't exist, insert to the users file and direct it to the chat page.
                 {                   
                
                     //using SignalR.Samples.MVCChat.Hubs.Chat.Chat("/nick" + model.UserName);
@@ -108,9 +116,6 @@ namespace SignalR.Samples.MVCChat.Controllers
                 if (ModelState.IsValid)
                 {
                     // Attempt to register the user
-                    //MembershipCreateStatus createStatus = MembershipCreateStatus.;
-
-                    //  Membership.CreateUser(model.UserName, model.Password, model.Email, null, null, true, null, out createStatus);
                     if (user_exist(model.UserName.ToString(), model.Password.ToString()) == 0)
                     {
                         System.IO.File.AppendAllText(file_path, model.UserName.ToString() + "\t\t" + model.Password.ToString() + "\r\n");

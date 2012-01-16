@@ -6,9 +6,9 @@
 
 #messages
 {
-    width: 50%;
+    width: 70%;
     border: 1px solid #ccc;
-    height: 200px;
+    height: 500px;
     float: left;
     overflow: auto;
     margin-left: 0px;
@@ -56,12 +56,12 @@
 
 .error 
 {
-    color:Yellow;
+    color:Red;
 }
 
 .pm
 {
-    color:Yellow;
+    color:Red;
 }
 
 .notification
