@@ -2,8 +2,10 @@
  * AccountController.cs- main class of the main uses of the users functionality and usability. 
  * Conatains the main methods to work with users signing in.
  * Written by: ALL EFC Team, as each has a part of specific methods.
+ * Used for login screen.
  * Some methods are built by default when creating a MVC3 project.
- * */
+ *  
+ */
 using System;
 using System.Web.Mvc;
 using System.Web.Security;

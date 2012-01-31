@@ -1,8 +1,9 @@
 ﻿/* 
  * Chat.cs- main class of the main uses of the chat functionality and usability. 
  * Conatains the main methods to function a simple chat program.
+ * Used by chat screen.
  * Written by: ALL EFC Team, as each has a part of specific methods.
- *
+ * 
  * */
 
 
